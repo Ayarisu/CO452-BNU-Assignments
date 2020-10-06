@@ -1,23 +1,52 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+app01-lab-classes/app01-Testing.txt
+app01-lab-classes/Car.java
+app01-lab-classes/LabClass.java
+app01-lab-classes/package.bluej
+app01-lab-classes/README.TXT
+app01-lab-classes/Student.java
+app01-lab-classes/Testing1.txt
+app02-ticketmachine/package.bluej
+app02-ticketmachine/README.TXT
+app02-ticketmachine/TicketMachine.java
+app03-studentGrades/package.bluej
+app03-studentGrades/README.TXT
+app03-studentGrades/Student.java
+app04-products/package.bluej
+app04-products/Product.java
+app04-products/README.TXT
+app04-products/StockDemo.java
+app04-products/StockManager.java
+app05-stock/InputReader.java
+app05-stock/package.bluej
+app05-stock/Program.java
+app05-stock/README.TXT
+app05-stock/StockApp.java
+images/App01-classes.jpg
+images/App02-classes.jpg
+images/App03-classes.jpg
+images/App04-classes.jpg
+images/appo5-classes.jpg
+images/BlueJ-Book-Cover.jpg
+images/CodeReview.jpg
+images/Commenting.jpg
+images/CW1A-1.jpg
+images/CW1A-2.jpg
+images/EgolessProgramming.jpg
+images/Folders.jpg
+images/Func-1.jpg
+images/GitHub Desktop-1.jpg
+images/GitHub Desktop-2.jpg
+images/GitHub Desktop-3.jpg
+images/Layout.jpg
+images/Naming.jpg
+images/ProductClasses.jpg
+images/ProgramHeading.jpg
+images/Quality-1.jpg
+images/Quality-2.jpg
+images/Structure.jpg
+images/Testing-1.jpg
+images/UCD-App05.jpg
+images/UML App01 Lab Class 2.jpg
+images/UML App01 Lab Class.jpg
+app01-lab-classes/app01-Testing.txt
