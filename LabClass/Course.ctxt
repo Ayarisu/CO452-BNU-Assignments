@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Course
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Course\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Course()
+comment1.text=\r\n\ Assigns\ a\ course\ ID\ and\ course\ name\r\n
+comment2.params=
+comment2.target=java.lang.String\ getCourse()
+comment2.text=\r\n\ Returns\ the\ course\ ID\ and\ name\r\n
+numComments=3
