@@ -7,7 +7,8 @@
 public class Ticket
 {
     // Default ticket prices for locations
-    private String aylesbury_Ticket;
-    private String amersham_Ticket;
-    private String highWycombe_Ticket;
+    private int aylesburyTicket = 220;
+    private int amershamTicket = 300;
+    private int highWycombeTicket = 330;
+
 }
