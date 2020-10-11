@@ -8,8 +8,14 @@ import java.util.*;
  */
 public class Students
 {
+    // student's name
     private String name;
+    // student's ID
     private String id;
+    // student's credits
+    private int credits;
+    // students course
+    Course getCourse = new Course();
 
     /**
      * New student name and ID.
@@ -18,14 +24,31 @@ public class Students
     {
         name = fullName;
         id = studentID;
+        credits = 0;
     }
-
+    
+    /**
+     * Adds the course to the student
+     */
+    public String getCourse()
+    {
+        return Course.courseID + ", " + Course.courseName;
+    }
+    
     /**
      * Return the full name of the student.
      */
     public String getName()
     {
         return name;
+    }
+    
+    /**
+    * Set a new name for this student.
+    */
+    public void changeName(String replacementName)
+    {
+        name = replacementName;
     }
     
     /**
