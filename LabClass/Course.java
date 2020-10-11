@@ -7,27 +7,25 @@
  */
 public class Course
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // course ID
+    public static String courseID = "G400";
+    // name of the course
+    public static String courseName = "Computing";
 
-    /**
-     * Constructor for objects of class Course
-     */
+  /**
+   * Assigns a course ID and course name
+  */
     public Course()
     {
-        // initialise instance variables
-        x = 0;
+        courseID = "G400";
+        courseName = "Computing";
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
+  /**
+   * Returns the course ID and name
+  */
+  public String getCourse()
+   {
+       return courseID + " " + courseName;
+   }
 }
