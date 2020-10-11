@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * Student class holds the information of the students present in this system. 
  *
@@ -72,6 +71,6 @@ public class Students
      */
     public void print()
     {
-        System.out.println(name + " ,student ID: " + id);
+        System.out.println(name + " ,student ID: " + id + ", Credits: " + credits);
     }
 }
