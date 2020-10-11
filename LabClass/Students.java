@@ -18,8 +18,8 @@ public class Students
     Course getCourse = new Course();
 
     /**
-     * New student name and ID.
-     */
+    * New student name and ID.
+    */
     public Students(String fullName, String studentID)
     {
         name = fullName;
@@ -28,23 +28,23 @@ public class Students
     }
     
     /**
-     * Adds the course to the student
-     */
+    * Adds the course to the student.
+    */
     public String getCourse()
     {
         return Course.courseID + ", " + Course.courseName;
     }
     
     /**
-     * Return the full name of the student.
-     */
+    * Return the full name of the student.
+    */
     public String getName()
     {
         return name;
     }
     
     /**
-    * Set a new name for this student.
+    * Change the student's name.
     */
     public void changeName(String replacementName)
     {
@@ -57,6 +57,14 @@ public class Students
     public String getStudentID()
     {
         return id;
+    }
+    
+    /**
+    * Add credits to the student.
+    */
+    public void addCredits(int additionalPoints)
+    {
+        credits += additionalPoints;
     }
     
     /**
