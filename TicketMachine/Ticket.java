@@ -1,3 +1,4 @@
+import java.util.Date;
 /**
  * Write a description of class Ticket here.
  *
@@ -6,9 +7,11 @@
  */
 public class Ticket
 {
-    // Default ticket prices for locations
-    private int aylesburyTicket = 220;
-    private int amershamTicket = 300;
-    private int highWycombeTicket = 330;
-
+    // Displays the destination chosen.
+    public String destination;
+    // Displays current date.
+    public Date todayDate;
+    // 
+    
+    
 }
