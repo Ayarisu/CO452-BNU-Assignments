@@ -1,0 +1,49 @@
+TicketMachine ticketMa2 = new TicketMachine();
+ticketMa2.chooseAmershamTicket();
+ticketMa2.getBalance()
+    returned int 0
+ticketMa2.getCost()
+    returned int 300
+ticketMa2.insertCoin(310);
+ticketMa2.printTicket();
+##################
+# The BlueJ Line
+# Ticket to Amersham Ticket
+# 300 cents.
+# Tue Oct 20 12:02:02 BST 2020
+##################
+
+ticketMa2.refundBalance()
+    returned int 10
+ticketMa2.chooseAylesburyTicket();
+ticketMa2.getBalance()
+    returned int 0
+ticketMa2.getCost()
+    returned int 220
+ticketMa2.insertCoin(210);
+ticketMa2.printTicket();
+You must insert at least: 10 more cents.
+ticketMa2.insertCoin(10);
+ticketMa2.printTicket();
+##################
+# The BlueJ Line
+# Ticket to Aylesbury Ticket
+# 220 cents.
+# Tue Oct 20 12:02:02 BST 2020
+##################
+
+ticketMa2.refundBalance()
+    returned int 0
+ticketMa2.chooseHighWycombe();
+ticketMa2.getBalance()
+    returned int 0
+ticketMa2.getCost()
+    returned int 330
+ticketMa2.insertCoin(330);
+ticketMa2.printTicket();
+##################
+# The BlueJ Line
+# Ticket to High Wycombe Ticket
+# 330 cents.
+# Tue Oct 20 12:02:02 BST 2020
+##################
