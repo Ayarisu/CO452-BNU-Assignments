@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Course
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Course\ here.\r\n\r\n\ @author\ (Luis\ Silva)\r\n\ @version\ (28/10/2020)\r\n
+comment1.params=courseName\ courseID
+comment1.target=Course(java.lang.String,\ java.lang.String)
+comment2.params=module1\ module2\ module3\ module4
+comment2.target=void\ assignModules(Module,\ Module,\ Module,\ Module)
+comment2.text=\r\n\ Assign\ 4\ modules\ to\ \ a\ course\r\n
+comment3.params=changeMark1\ changeMark2\ changeMark3\ changeMark4
+comment3.target=void\ changeModuleMark(int,\ int,\ int,\ int)
+comment3.text=\r\n\ Change\ the\ module\ marks\r\n
+comment4.params=module1\ module2\ module3\ module4
+comment4.target=void\ calculateFinalGrade(Module,\ Module,\ Module,\ Module)
+comment4.text=\r\n\ Method\ to\ calculate\ the\ final\ grade\ by\ adding\ the\ total\ and\ dividing\ my\ amount\ of\ modules\r\n
+comment5.params=
+comment5.target=java.lang.String\ getFinalGrade()
+comment5.text=\r\n\ Using\ if\ and\ else\ if\ to\ figure\ out\ what\ mark\ to\ give\ as\ final\ grade.\ Not\ sure\ if\ I\ could\ have\ done\r\n\ it\ in\ a\ better\ way.\r\n
+comment6.params=
+comment6.target=void\ printCourseDetails()
+comment6.text=\r\n\ Print\ everything\ related\ to\ the\ course,\ including\ modules.\ \r\n
+numComments=7
