@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Luis Silva) 
+ * @version (8/11/2020)
  */
 public class StockManager
 {
@@ -27,6 +27,20 @@ public class StockManager
     public void addProduct(Product item)
     {
         stock.add(item);
+    }
+    
+    /**
+     * Checks to  see if the product id provided is eqeal to one in stock.
+     * @param id The ID of the product.
+     * @param product the product in the stock.
+     */
+    public boolean checkID(Product product, int id)
+    {
+        if (product.getID() == id)
+        {
+            return true;
+        }
+        return false;
     }
     
     /**
@@ -54,8 +68,9 @@ public class StockManager
     {
         for(Product product : stock)
         {
-            if (product.id == id)
+            if (checkID(product,id) == true)
             {
+                System.out.println ("Recieved " + amount + " of " + product.name + " " +product.getID());
                 product.increaseQuantity(amount);
             }
         }
@@ -78,6 +93,18 @@ public class StockManager
         return null;
     }
     
+     public void sale(int id, int amount)
+    {
+        for(Product product : stock)
+        {
+            if (product.id == id)
+            {
+                System.out.println ("Sold " + amount + " of " + product.name + " " +product.getID());
+                product.sellQuantity(amount);
+            }
+        }
+    }
+    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -98,20 +125,21 @@ public class StockManager
     }
 
     /**
-     * Print details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
+     * Print details of all the products.
      */
-    public void printProductDetails(int id)
+    public void printProductDetails()
     {
-        for (Product product : stock)
-        {
+        System.out.println ("=============");
+        System.out.println ("Current Stock");
+        System.out.println ("=============");
+            for(Product product : stock)
             {
-                System.out.println(product.toString());
+                {
+                 System.out.println (product.toString());
+                }
             }
-        }
+        
     }
-    
     /**
      * Prints a list of products low in stock.
      */

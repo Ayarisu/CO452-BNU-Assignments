@@ -1,0 +1,53 @@
+StockManager stock = new StockManager();
+StockDemo demo = new StockDemo(stock);
+demo.demo();
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 0
+37: Mobile Phone stock level: 0
+23: Microwave Oven stock level: 0
+210: Laptop stock level: 0
+91: Table stock level: 0
+56: Mousepad stock level: 0
+43: Mouse stock level: 0
+302: Television stock level: 0
+110: Silverware stock level: 0
+1: Mug stock level: 0
+Recieved 9 of Clock Radio 132
+Recieved 2 of Mobile Phone 37
+Recieved 7 of Table 91
+Recieved 6 of Mouse 43
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 9
+37: Mobile Phone stock level: 2
+23: Microwave Oven stock level: 0
+210: Laptop stock level: 0
+91: Table stock level: 7
+56: Mousepad stock level: 0
+43: Mouse stock level: 6
+302: Television stock level: 0
+110: Silverware stock level: 0
+1: Mug stock level: 0
+=============
+Sale of stock
+=============
+Sold 3 of Clock Radio 132
+Sold 1 of Mobile Phone 37
+Sold 3 of Table 91
+Sold 4 of Mouse 43
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 6
+37: Mobile Phone stock level: 1
+23: Microwave Oven stock level: 0
+210: Laptop stock level: 0
+91: Table stock level: 4
+56: Mousepad stock level: 0
+43: Mouse stock level: 2
+302: Television stock level: 0
+110: Silverware stock level: 0
+1: Mug stock level: 0

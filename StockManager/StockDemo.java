@@ -15,9 +15,9 @@ public class StockDemo
      * Create a StockManager and populate it with a few
      * sample products.
      */
-    public StockDemo(StockManager manager)
+    public StockDemo(StockManager stockManager)
     {
-        manager = new StockManager();
+        manager = stockManager;
         manager.addProduct(new Product(132, "Clock Radio"));
         manager.addProduct(new Product(37,  "Mobile Phone"));
         manager.addProduct(new Product(23,  "Microwave Oven"));
@@ -35,13 +35,26 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+        public void demo()
     {
         // Show details of all of the products.
-        manager.printProductDetails(132);
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails(132);
+        manager.printProductDetails();
+        // Take delivery of items.
+        manager.delivery(132, 9);
+        manager.delivery(37, 2);
+        manager.delivery(91, 7);
+        manager.delivery(43, 6);
+        // Show details of all of the products.
+        manager.printProductDetails();
+        // Sale of products.
+        System.out.println ("=============");
+        System.out.println ("Sale of stock");
+        System.out.println ("=============");
+        manager.sale(132, 3);
+        manager.sale(37, 1);
+        manager.sale(91, 3);
+        manager.sale(43, 4);
+        manager.printProductDetails();
     }
     
     /**
