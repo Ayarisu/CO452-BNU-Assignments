@@ -14,40 +14,100 @@ Current Stock
 302: Television stock level: 0
 110: Silverware stock level: 0
 1: Mug stock level: 0
-Recieved 9 of Clock Radio 132
-Recieved 2 of Mobile Phone 37
-Recieved 7 of Table 91
-Recieved 6 of Mouse 43
+Recieved 123 of Clock Radio 132
+Recieved 743 of Mobile Phone 37
+Recieved 120 of Microwave Oven 23
+Recieved 930 of Laptop 210
+Recieved 212 of Table 91
+Recieved 274 of Mousepad 56
+Recieved 573 of Mouse 43
+Recieved 110 of Television 302
+Recieved 634 of Silverware 110
+Recieved 1000 of Mug 1
 =============
 Current Stock
 =============
-132: Clock Radio stock level: 9
-37: Mobile Phone stock level: 2
-23: Microwave Oven stock level: 0
-210: Laptop stock level: 0
-91: Table stock level: 7
-56: Mousepad stock level: 0
-43: Mouse stock level: 6
-302: Television stock level: 0
-110: Silverware stock level: 0
-1: Mug stock level: 0
+132: Clock Radio stock level: 123
+37: Mobile Phone stock level: 743
+23: Microwave Oven stock level: 120
+210: Laptop stock level: 930
+91: Table stock level: 212
+56: Mousepad stock level: 274
+43: Mouse stock level: 573
+302: Television stock level: 110
+110: Silverware stock level: 634
+1: Mug stock level: 1000
 =============
 Sale of stock
 =============
-Sold 3 of Clock Radio 132
-Sold 1 of Mobile Phone 37
-Sold 3 of Table 91
-Sold 4 of Mouse 43
+Sold 12 of Clock Radio 132
+Sold 40 of Mobile Phone 37
+Sold 10 of Microwave Oven 23
+Sold 32 of Laptop 210
+Sold 40 of Table 91
+Sold 55 of Mousepad 56
+Sold 64 of Mouse 43
+Sold 24 of Television 302
+Sold 86 of Silverware 110
+Sold 94 of Mug 1
 =============
 Current Stock
 =============
-132: Clock Radio stock level: 6
-37: Mobile Phone stock level: 1
-23: Microwave Oven stock level: 0
-210: Laptop stock level: 0
-91: Table stock level: 4
-56: Mousepad stock level: 0
-43: Mouse stock level: 2
-302: Television stock level: 0
-110: Silverware stock level: 0
-1: Mug stock level: 0
+132: Clock Radio stock level: 111
+37: Mobile Phone stock level: 703
+23: Microwave Oven stock level: 110
+210: Laptop stock level: 898
+91: Table stock level: 172
+56: Mousepad stock level: 219
+43: Mouse stock level: 509
+302: Television stock level: 86
+110: Silverware stock level: 548
+1: Mug stock level: 906
+stock.findProduct(1)
+    returned Object <object reference>
+stock.printLowStockProducts();
+stock.printProductDetails();
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 111
+37: Mobile Phone stock level: 703
+23: Microwave Oven stock level: 110
+210: Laptop stock level: 898
+91: Table stock level: 172
+56: Mousepad stock level: 219
+43: Mouse stock level: 509
+302: Television stock level: 86
+110: Silverware stock level: 548
+1: Mug stock level: 906
+stock.numberInStock(110)
+    returned int 548
+stock.renameProduct(110, "Antenna");
+stock.printProductDetails();
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 111
+37: Mobile Phone stock level: 703
+23: Microwave Oven stock level: 110
+210: Laptop stock level: 898
+91: Table stock level: 172
+56: Mousepad stock level: 219
+43: Mouse stock level: 509
+302: Television stock level: 86
+110: Antenna stock level: 548
+1: Mug stock level: 906
+stock.removeProduct(110);
+stock.printProductDetails();
+=============
+Current Stock
+=============
+132: Clock Radio stock level: 111
+37: Mobile Phone stock level: 703
+23: Microwave Oven stock level: 110
+210: Laptop stock level: 898
+91: Table stock level: 172
+56: Mousepad stock level: 219
+43: Mouse stock level: 509
+302: Television stock level: 86
+1: Mug stock level: 906
