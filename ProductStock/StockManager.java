@@ -32,32 +32,39 @@ public class StockManager
      */
     public boolean checkID(int inputID)
     {
+        boolean bool = false;
         for(Product product : stock)
         {
-            int chosenID = product.getID();
-            if (chosenID == inputID)
+            int testID = product.getID();
+            if(testID != inputID)
             {
-                return true;
+                bool = false;
+            }
+            if(testID == inputID)
+            {
+                bool = true;
+                break;
             }
         }
-        return false;
+        return bool;
     }  
     
-    /**
+        /**
      * Tests if the input name is empty, if so it returns an error message.
      */
     public boolean nameChecker(String inputName)
     {
-        if (inputName.isEmpty() == true)
+        boolean setName= true;
+        if(inputName.isEmpty() == true)
         {
-            System.out.println("The name " + inputName + " is available.");
+            setName = true;
         }
         
-        if (inputName.isEmpty() == false)
+        if(inputName.isEmpty() == false)
         {
-            System.out.println("The name " + inputName + " is already taken.");
+            setName = false;
         }
-        return false;
+        return setName;
     }
     
     /**
@@ -78,7 +85,7 @@ public class StockManager
         }
         if(checkName == true)
         {
-            System.out.println("You have entered an empty name. Please re-enter");
+            System.out.println("You have entered an empty name. Please re-enter.");
         }
     }
     
@@ -162,21 +169,33 @@ public class StockManager
      */
     public void sellProduct(int inputID, int sellAmount)
     {
-        for(Product product : stock)
+        boolean defaultID = checkID(inputID);
+        if(defaultID = true && sellAmount > 0)
         {
-            if(product.id == inputID)
+            for(Product product : stock)
             {
-                if(product.quantity - sellAmount < 0)
+                if(product.id == inputID)
                 {
-                    System.out.println("You are trying to sell more " + product.name + " than are left in stock. There are " + product.quantity + " remaining.");
+                    if(product.quantity - sellAmount < 0)
+                    {
+                        System.out.println("You are trying to sell more " + product.name + " than are left in stock. There are " + product.quantity + " remaining.");
+                    }
+                    if(product.quantity - sellAmount > 0)
+                    {
+                        System.out.println(sellAmount + " of product ID: " + inputID + " have been sold.");
+                        product.quantity = product.quantity - sellAmount;
+                    }
+                    break;
                 }
-                if(product.quantity - sellAmount > 0)
-                {
-                    System.out.println(sellAmount + " of product ID: " + inputID + " have been sold.");
-                    product.quantity = product.quantity - sellAmount;
-                }
-                break;
             }
+        }
+        if(defaultID = false)
+        {
+            System.out.println("Product with ID: " + inputID + " could not be found."); 
+        }
+        if(sellAmount < 0)
+        {
+            System.out.println("Please enter a valid amount to sell.");
         }
     }
     

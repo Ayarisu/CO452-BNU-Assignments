@@ -1,0 +1,206 @@
+> remove
+       Luis' stock list       
+ID | Product Name | Quantity
+------------------------
+111: Chair , Amount: 0
+112: Keyboard , Amount: 0
+113: Laptop , Amount: 0
+114: TV , Amount: 0
+115: Desk , Amount: 0
+
+Enter the ID of the product you want to remove: 
+> 113
+Product with ID: 113 has been removed from the stock list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> remove
+       Luis' stock list  
+ID | Product Name | Quantity
+------------------------
+111: Chair , Amount: 0
+112: Keyboard , Amount: 0
+114: TV , Amount: 0
+115: Laptop , Amount: 0
+
+Enter the ID of the product you want to remove: 
+> 203
+Product with ID: 203 could not be found.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> print
+       Luis' stock list       
+ID | Product Name | Quantity
+------------------------
+111: Chair , Amount: 0
+112: Keyboard , Amount: 0
+114: TV , Amount: 0
+115: Laptop , Amount: 0
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> delivery
+Enter the ID of the product you want to increase the quantity of: 
+> 112
+Enter the amount of product ID: 112 you want to increase the quantity of.
+> 8
+8 of product ID: 112 have been added.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> delivery
+Enter the ID of the product you want to increase the quantity of: 
+> 112
+Enter the amount of product ID: 112 you want to increase the quantity of.
+> -4
+You have entered an invalid amount to deliver. Please enter a positive number
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> sell
+Enter the ID of the product you want to sell: 
+> 112
+Enter the amount of product ID: 112 you want to sell.
+> 2
+2 of product ID: 112 have been sold.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> sell
+Enter the ID of the product you want to sell: 
+> 112
+Enter the amount of product ID: 112 you want to sell.
+> 10
+You are trying to sell more Keyboard than are left in stock. There are 6 remaining.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> sell
+Enter the ID of the product you want to sell: 
+> 112
+Enter the amount of product ID: 112 you want to sell.
+> 6
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> sell
+Enter the ID of the product you want to sell: 
+> 112
+Enter the amount of product ID: 112 you want to sell.
+> -2
+Please enter a valid amount to sell.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> search
+Enter the name of a product you would like to find
+> Keyboard
+Products with names matching 'Keyboard'.
+112: Keyboard , Amount: 6
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> low stock
+Enter a number. Any products with a quantity equal to or below this amount will be printed.
+> 2
+You are running low on ID: 111, Chair. There are currently 0 remaning.
+
+You are running low on ID: 114, TV. There are currently 0 remaning.
+
+You are running low on ID: 115, Laptop. There are currently 0 remaning.
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> quit
+Thanks for using the program.

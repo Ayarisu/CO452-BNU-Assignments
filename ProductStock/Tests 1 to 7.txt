@@ -1,0 +1,143 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Luis Silva
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 111
+Input the product name: 
+> Chair
+
+Product with ID: 111 name: Chair has been added!
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 112
+Input the product name: 
+> Keyboard
+
+Product with ID: 112 name: Keyboard has been added!
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 113
+Input the product name: 
+> Laptop
+
+Product with ID: 113 name: Laptop has been added!
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 114
+Input the product name: 
+> TV
+
+Product with ID: 114 name: TV has been added!
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 115
+Input the product name: 
+> Desk
+
+Product with ID: 115 name: Laptop has been added!
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 115
+Input the product name: 
+> Desk
+
+Product with ID: 115 has already been found. Product has not been added.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> add
+Input the product ID: 
+> 116
+Input the product name: 
+> 
+
+You have entered an empty name. Please re-enter.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:   Print all products
+    Delivery:   Accept a delivery
+    Sell:   Sell product
+    Search:   Search for products from part of their name
+    Low:   Print all products low in stock
+    Restock:   Restock products low in stock
+    Quit:       Quit the program
+
+> 

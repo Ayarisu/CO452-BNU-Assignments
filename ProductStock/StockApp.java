@@ -97,7 +97,7 @@ public class StockApp
         }
     }
     
-        /**
+     /**
      * Lets the user add a product with user input
      */
     private void addProduct()
@@ -257,7 +257,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Student Name");
+        System.out.println("    App05: by Luis Silva");
         System.out.println("******************************");
     }
 }
