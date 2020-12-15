@@ -1,0 +1,31 @@
+Student joe = new Student("Joestar Lanburg", "23123423");
+Course gameDev = new Course("Game Development", "GD1");
+Module program = new Module("Programming", "CO452");
+joe.enrollOnCourse(gameDev);
+Module gameDesign = new Module("Game Design", "CO459");
+Module modelling = new Module("3D Modelling", "CO461");
+Module architecture = new Module("Computer Architecture", "CO450");
+gameDev.assignModules(program, gameDesign, modelling, architecture);
+gameDev.changeModuleMark(50, 64, 32, 80);
+program.printModule();
+Module: CO452, Programming. Current mark: 50
+gameDesign.printModule();
+Module: CO459, Game Design. Current mark: 64
+modelling.printModule();
+Module: CO461, 3D Modelling. Current mark: 32
+architecture.printModule();
+Module: CO450, Computer Architecture. Current mark: 80
+gameDev.printCourseDetails();
+Course: GD1, Game Development
+Course Modules: 
+Module: CO452, Programming. Current mark: 50
+Module: CO459, Game Design. Current mark: 64
+Module: CO461, 3D Modelling. Current mark: 32
+Module: CO450, Computer Architecture. Current mark: 80
+gameDev.calculateFinalGrade(program, gameDesign, modelling, architecture);
+gameDev.getFinalGrade()
+    returned String "C"
+joe.printFinalGrade();
+The final grade is: C
+joe.print();
+Joestar Lanburg, student ID: 23123423, credits: 0
