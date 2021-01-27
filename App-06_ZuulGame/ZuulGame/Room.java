@@ -1,6 +1,7 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ArrayList;
 
 /**
  * Class Room - a room in an adventure game.
@@ -19,7 +20,13 @@ import java.util.Iterator;
 public class Room 
 {
     private String description;
-    private HashMap<String, Room> exits;        // stores exits of this room.
+    // String is the key to a room in that direction
+    // east would be an exit that goes to the Room
+    private HashMap<String, Room> exits;
+    private ArrayList<Items> roomInventory;
+    private Room room;
+    private Items item;
+    private boolean locked;
 
     /**
      * Create a room described "description". Initially, it has
@@ -31,6 +38,8 @@ public class Room
     {
         this.description = description;
         exits = new HashMap<>();
+        roomInventory = new ArrayList<Items>();
+        locked = false;
     }
 
     /**
@@ -60,7 +69,26 @@ public class Room
      */
     public String getLongDescription()
     {
-        return "You are " + description + ".\n" + getExitString();
+        String output = "";
+        if(roomInventory.size() > 0)
+        {
+            output = "You are in " + description + ". You see something in the room. " + ".\n" + getExitString();
+        }
+        else
+        {
+            output = "You are " + description + ".\n" + getExitString();
+        }
+        return output;
+    }
+
+    /**
+     * method to run on command so player can search a room for items
+     */
+    public void lookAround()
+    {
+        System.out.println("You look around and see ");
+        System.out.println(printRoomInv());
+        System.out.println(getExitString());
     }
 
     /**
@@ -90,5 +118,89 @@ public class Room
     {
         return exits.get(direction);
     }
-}
 
+    /**
+     * adds an item to the room inventory.
+     * @param item the item that will be added
+     */
+    public void addItemToRoom(Items item)
+    {
+        roomInventory.add(item);
+    }
+
+    /**
+     * removes an item from the room inventory.
+     * @param item the item that will be removed
+     */
+    public void removeItemFromRoom(Items item)
+    {
+        roomInventory.remove(item);
+    }
+
+    /**
+     * loops through the room inventory and prints the name of each item.
+     * @return a string containing all items in the room inventory
+     */
+    public String printRoomInv()
+    {
+        String output = "";
+        for (Items items : roomInventory)
+        {
+            output += items.getName() + " ";
+        }
+        return output;
+    }
+
+    /**
+     * check to see if an item is in the room
+     * @param itemName the name of the item being compared
+     * @return boolean
+     */
+    public boolean hasItem(String itemName)
+    {
+        boolean output = false;
+
+        for(int i = 0; i < roomInventory.size(); i++)
+        {
+            if(roomInventory.get(i).getName().equals(itemName))
+            {
+                output = true;
+            }
+        }
+        return output;
+    }
+
+    /**
+     * sets the locked status of a room
+     * @param input = locked status
+     */
+    public void setLock(boolean input)
+    {
+        locked = input;
+    }
+
+    /**
+     * @return locked status of room
+     */
+    public boolean getLockStatus()
+    {
+        return locked;
+    }
+
+    /**
+     * returns the compared item
+     * @param itemName the name of the item being located
+     * @return ITEM
+     */
+    public Items getItem(String itemName)
+    {
+        for(int i = 0; i < roomInventory.size(); i++)
+        {
+            if(roomInventory.get(i).getName().equals(itemName))
+            {
+                return roomInventory.get(i);
+            }
+        }
+        return null;
+    }
+}
