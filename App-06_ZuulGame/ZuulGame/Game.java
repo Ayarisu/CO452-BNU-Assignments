@@ -77,18 +77,18 @@
     private void createRooms()
     {
         // create the rooms
-        outside = new Room("outdoor area");
-        hall = new Room("hall to theatre");
-        theatre = new Room("main theatre");
-        pub = new Room("on site pub");
-        hallway1 = new Room("hallway to lab");
-        lab = new Room("science lab");
-        hallway2 = new Room("hallway to office");
-        office = new Room("admin office");
-        toilet = new Room("pub's toilet");
-        storage = new Room("lab's storage");
-        backstage = new Room("theatre backstage");
-        escape = new Room("escape through office");
+        outside = new Room("the outdoor area");
+        hall = new Room("the hall to theatre");
+        theatre = new Room("the main theatre");
+        pub = new Room("the pub");
+        hallway1 = new Room("the hallway to lab");
+        lab = new Room("the science lab");
+        hallway2 = new Room("the hallway to office");
+        office = new Room("the admin office");
+        toilet = new Room("the pub's restroom");
+        storage = new Room("the lab's storage");
+        backstage = new Room("the theatre backstage");
+        escape = new Room("the escape room");
         
 
         // initialise room exits
