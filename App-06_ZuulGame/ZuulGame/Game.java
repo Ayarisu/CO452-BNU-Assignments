@@ -132,7 +132,7 @@
         backstage.addItemToRoom(crowbar);
         pub.addItemToRoom(glassShard);
         storage.addItemToRoom(escapeKey);
-        office.addItemToRoom(note);
+        theatre.addItemToRoom(note);
         hallway1.addItemToRoom(ring);
         outside.addItemToRoom(bag);
         
