@@ -14,7 +14,7 @@
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
  * 
- * Modified and extended by Student Name
+ * Modified and extended by Luis Silva
  */
 
  public class Game 
@@ -22,7 +22,7 @@
     private Parser parser;
     private Room currentRoom;
     private Player player;
-    private Items labKey, crowbar, glassShard, escapeKey, note, photo, ring;
+    private Items labKey, crowbar, glassShard, escapeKey, note, photo, ring, bag;
     private Room escape, pub, hallway1, hallway2, hall, theatre, backstage, lab, storage, toilet, office, outside;
         
     /**
@@ -134,6 +134,7 @@
         storage.addItemToRoom(escapeKey);
         office.addItemToRoom(note);
         hallway1.addItemToRoom(ring);
+        outside.addItemToRoom(bag);
         
         lab.setLock(true);
         pub.setLock(true);
@@ -141,18 +142,19 @@
         escape.setLock(true);
     }
 
-        /**
-     * Initialises game items
-     */
+    /**
+    * Initialises game items
+    */
     private void createItems()
     {
         labKey = new Items("LabKey", "This key says it belonged to a researcher.", 1, 15);
         crowbar = new Items("Crowbar", "A robust crowbar, it'll probably come in handy.", 5, 10);
         glassShard = new Items("GlassShard", "Best be careful not to get cut.", 2, 20);
         escapeKey = new Items("ShinyKey", "This key looks important... I'll hold on to it.", 1, 50);
-        note = new Items("Note", "Note has what looks like a drawing on it, but it's damp, can't see it well.", 1, 20);
-        ring = new Items("Ring", "This ring is familiar... where could I have seen it before?", 1, 500);
+        note = new Items("Note", "Note has what looks like a drawing on it, but it's damp, can't see it well.", 1, 70);
+        ring = new Items("Ring", "This ring is familiar... where could I have seen it before?", 1, 80);
         photo = new Items("Photo", "This is a photo of some sort of group... who might it belong to?", 1, 30);
+        bag = new Items("Bag", "A small bag that increases your storage", 1, 20);
     }
     
     /**
@@ -228,13 +230,6 @@
          }
          return wantToQuit;
     }
-
-    // implementations of user commands:
-    
-    /**
-     * Allows player to pick items in the current room.
-     * 
-     */
     
     /**
      * Print out some help information.
@@ -272,9 +267,9 @@
                 player.removeItemFromInv(player.getItem(itemString));
                 player.setEnergy(5);
             }
-            if(itemString.equals("Ring"))
+            if(itemString.equals("Bag"))
             {
-                System.out.println("This ring appears to have some storing capabilities.");
+                System.out.println("You equip the bag (max weight + 20).");
                 player.setMaxWeight(20);
             }
             if(itemString.equals("LabKey"))
@@ -295,7 +290,7 @@
             if(itemString.equals("ShinyKey"))
             {
                 System.out.println("You can now escape.");
-                storage.setLock(false);
+                escape.setLock(false);
             }
         }
         else

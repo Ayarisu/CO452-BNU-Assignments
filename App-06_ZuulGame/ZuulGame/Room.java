@@ -72,7 +72,7 @@ public class Room
         String output = "";
         if(roomInventory.size() > 0)
         {
-            output = "You are in " + description + ". You see something in the room. " + ".\n" + getExitString();
+            output = "You are in " + description + ". Maybe I should examine the room. " + ".\n" + getExitString();
         }
         else
         {
